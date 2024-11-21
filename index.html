@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UKRP Divisional Command - Official Agreement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2.12.0/tsparticles.engine.min.js"></script>
+</head>
+<body>
+    <div id="background-particles" class="background-particles"></div>
+    <div class="gradient-overlay"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="ukrp-logo.png" alt="UKRP Logo" class="logo">
+                <span class="logo-text">UKRP Divisional Command Agreement</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Official Agreement</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content-wrapper">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Command Member Onboarding</h1>
+                <p>Official Commitment & Responsibility Agreement</p>
+                <div class="hero-cta">
+                    <button id="readGuidelinesBtn" class="glowing-btn">
+                        <i class="fas fa-scroll"></i> Review Agreement Terms
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div id="guidelinesModal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>UKRP Divisional Command Official Guidelines</h2>
+                <div class="guidelines-content">
+                    <div class="guideline-section">
+                        <h3>Core Responsibilities</h3>
+                        <ul>
+                            <li>Uphold the highest standards of leadership</li>
+                            <li>Represent UKRP with unwavering integrity</li>
+                            <li>Prioritize community welfare and server objectives</li>
+                        </ul>
+                    </div>
+                    <div class="guideline-section">
+                        <h3>Conduct Standards</h3>
+                        <ul>
+                            <li>Maintain professional and respectful communication</li>
+                            <li>Resolve conflicts through diplomatic channels</li>
+                            <li>Provide constructive and fair guidance</li>
+                        </ul>
+                    </div>
+                    <div class="guideline-section">
+                        <h3>Confidentiality & Ethics</h3>
+                        <ul>
+                            <li>Protect sensitive server and member information</li>
+                            <li>Maintain strict confidentiality of internal discussions</li>
+                            <li>Adhere to ethical leadership principles</li>
+                        </ul>
+                    </div>
+                </div>
+                <button id="agreeBtn" class="glowing-btn">
+                    <i class="fas fa-check-circle"></i> I Understand & Agree
+                </button>
+            </div>
+        </div>
+
+        <div id="agreementForm" class="modal">
+            <div class="modal-content form-modal">
+                <span class="modal-close">&times;</span>
+                <h2>Command Member Official Agreement</h2>
+                <form id="commandAgreementForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Discord ID</label>
+                            <input type="text" placeholder="Discord ID" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Age</label>
+                            <input type="number" min="16" max="99" placeholder="Your current age" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Your Email Address (Must work with google docs)" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Command Tier</label>
+                            <select required>
+                                <option value="">Select Your Command Tier</option>
+                                <option>Bronze Command</option>
+                                <option>Silver Command</option>
+                                <option>Gold Command</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Additional Context</label>
+                            <textarea placeholder="Provide any additional comments if you wish."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="agreement-checks">
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" required>
+                                I commit to maintaining professional conduct at all times
+                            </label>
+                            <label>
+                                <input type="checkbox" required>
+                                I understand and will protect server confidentiality
+                            </label>
+                            <label>
+                                <input type="checkbox" required>
+                                I acknowledge potential disciplinary actions for misconduct
+                            </label>
+                            <label>
+                                <input type="checkbox" required>
+                                I confirm I am at least 16 years old and fully responsible
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-file-signature"></i> Submit Official Agreement
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 UKRP Command Division - All Rights Reserved</p>
+            <p>Official Internal Document - Confidential</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.3.4/tsparticles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
